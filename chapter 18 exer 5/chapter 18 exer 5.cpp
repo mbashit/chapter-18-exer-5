@@ -16,18 +16,22 @@ int main()
 	cout << "enter an integer from (-9999 to 9999): ";
 	cin >> x;
 
-	if (x >= -9999 && x <= 9999) {
-		cout << "A 4 - digit integer entered: ";
-	}
-	else if (x >= -999 && x <= 999) {
-		cout << "A 3 - digit integer entered: ";
-	}
-	else if (x >= -99 && x <= 99) {
-		cout << "A 2 - digit integer entered: ";
-	}
-	else if (x >= -9 && x <= 9) {
+	if (x >= -9 && x <= 9) {
 		cout << "A 1 -digit integere entered: ";
 	}
+
+	else if (x >= -99 && x <= 99) {
+	cout << "A 2 - digit integer entered: ";
+	}
+
+	else if (x >= -999 && x <= 999) {
+	cout << "A 3 - digit integer entered: ";
+	}
+
+	else if (x >= -9999 && x <= 9999) {
+		cout << "A 4 - digit integer entered: ";
+	}
+
 	else {
 		cout << "wrong integer entered: " << endl;
 	}
